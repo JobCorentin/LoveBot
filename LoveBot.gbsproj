@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 2140.800048828125,
-        "worldScrollY": 696,
-        "zoom": 400,
+        "worldScrollX": 924.7999877929688,
+        "worldScrollY": 184,
+        "zoom": 200,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -20,7 +20,7 @@
         "defaultSpritePaletteId": "default-sprite",
         "defaultUIPaletteId": "default-ui",
         "startX": 0,
-        "startY": 12,
+        "startY": 13,
         "startDirection": "right",
         "startSceneId": "196ad0a1-0094-4f2b-a999-3926170f6057",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
@@ -511,7 +511,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Mr. M : Architect\n...",
+                                                            "Gwenn :\nla plaque dit\nMr. M : Architect",
                                                             "Ce n'est pas\nl'appart de Coco."
                                                         ],
                                                         "avatarId": ""
@@ -558,7 +558,7 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Je ne vais pas les\ndéranger pour\nrien."
+                                                            "Gwenn :\nJe ne vais pas les\ndéranger."
                                                         ],
                                                         "avatarId": ""
                                                     }
@@ -595,7 +595,141 @@
                     "x": 5,
                     "y": 11,
                     "width": 1,
-                    "height": 1
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "97a88b58-7f9e-403d-9bfb-ede1f0a54b9f",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "8e50ec47-b2a9-4bc7-a5c6-5e4eeff93e4f",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "a45446dc-7eb8-49fa-8a38-f9ad2a2a15bb",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nC'est un parapluie\njaune..",
+                                                            "Il est très\nmignon."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c5ab11ff-0422-4a68-821d-5ea729ffa1bf",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "L0"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "616db35d-7c0a-4f62-9063-817fb9ca1d8d",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "0da72225-cb75-449d-a592-74f82a245667",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "6a5474a0-109d-48b6-9848-e8cdaf60d9ab",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "5a1b00b2-5b5b-4760-9923-0a75549ba5c6",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "13b8fd5a-a29e-417b-a79e-efee95f89874",
+                                                    "command": "EVENT_IF_ACTOR_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "direction": "up",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "2732081d-e37b-4a33-8444-de3b13303bae",
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "emoteId": "1"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e4e8d2e4-52ae-4d78-8b1b-07471570763c",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Gwenn :\nTiens il y a une\nétiquette.",
+                                                                        "\"Ce parapluie\nappartient à\nTracy.\""
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "d266a729-2149-47f1-9e5c-a3970f13a709",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "81566e2d-883d-401e-91d1-94e2d76dd8e0",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "e05153bf-7711-4962-b45f-c5bda806a038",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "52a9a7a6-e8ea-44da-b184-7a98bf9e4501",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "58c4cdf5-4604-4f93-bc01-e7a4f1b8b3ea",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bf93af4a-a35d-4f65-9fe5-b235379c00de",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "trigger": "walk",
@@ -603,7 +737,175 @@
                     "x": 11,
                     "y": 11,
                     "width": 2,
-                    "height": 1
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "a109240c-16f6-4d61-b980-4037b35d607a",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "13ac1304-c10e-4625-8e32-d386837b08a7",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "6562153c-64d0-4d2e-973b-f454035f04f0",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwen :\nAppartement de.."
+                                                        ],
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "6d21b658-2170-4657-ba4d-a633bc3f51de",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": 0,
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c778f344-4c60-476b-b24e-569ee5d51880",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Mista :\nC'est pour ?\nDépechez-vous",
+                                                            "avant que je\nperde patience."
+                                                        ],
+                                                        "avatarId": "e95af522-fa37-4009-91ea-14421214ed71",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ce202d94-b4ab-429c-a06c-f575b676d20c",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "5",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "acc6133f-f40c-446e-b440-1d4078bb693f",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nHeu.. je..\nme suis trompé",
+                                                            "d'appartement\nExcusez-moi.."
+                                                        ],
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f760c6e9-6e5b-4710-bd31-63d75c1ae1c3",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Mista :\nAller déguerpi\nd'ici."
+                                                        ],
+                                                        "avatarId": "e95af522-fa37-4009-91ea-14421214ed71",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "293295fd-e96c-4739-be2a-9cbe7b068b0b",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwen :\nIl avait un\nflingue !",
+                                                            "Mais c'est quoi\ncette endroit !"
+                                                        ],
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4502733e-564a-4cd4-901d-0f646bc8d55e",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "L0",
+                                                        "__collapse": false
+                                                    }
+                                                },
+                                                {
+                                                    "id": "006051ab-969f-4198-b43f-3876b51a28fa",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "769eb8e5-1844-474b-bf74-3f0555b3f451",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "9460dbc7-a9d6-4e3c-a183-dc59d37aab39",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "e2d8074a-14a3-4df4-ae50-1a510d32fd02",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "6ffbfbe8-c59e-4c89-888e-4eb3485bca17",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nOn va éviter d'y\nretourner..."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "aec2036b-11df-4de2-8da5-02d06dfc2647",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "a9de4769-dca5-4b57-a258-17db074ea6f5",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "8e27733c-1a42-4b1d-9847-9b483a9dd39f",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "76589227-3d9f-449b-83fa-1947d1f5e57c",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 },
                 {
                     "trigger": "walk",
@@ -611,9 +913,127 @@
                     "x": 20,
                     "y": 11,
                     "width": 2,
-                    "height": 1
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "ecfdb2d6-3fe4-44a3-bea0-152b1963a0b7",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "3d0a1391-03cc-41d2-85b2-715ede6d3b96",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "54d29b99-b5fa-468d-8345-67c76cc3593b",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "1",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "fd541082-9874-4e82-bc74-6dfb31f86383",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwen :\nAppartement de\nJob Corentin",
+                                                            "Ha le voilà !\n*toc toc*"
+                                                        ],
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "3611b1e6-9c98-49ad-a76c-33d92b1d6a5f",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "7",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "90f11645-aa7c-4a9c-b5dd-27d4ef8197e9",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nBon il à pas\nl'air d'être la.",
+                                                            "essayons\nd'ouvrir."
+                                                        ],
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "dc74f13c-c31a-4351-8bf3-6f439f2859b5",
+                                                    "command": "EVENT_SWITCH_SCENE",
+                                                    "args": {
+                                                        "sceneId": "9b76cfee-847f-458d-8a06-e84afe517c46",
+                                                        "x": 9,
+                                                        "y": 17,
+                                                        "direction": "up",
+                                                        "fadeSpeed": "2",
+                                                        "__collapse": true
+                                                    }
+                                                },
+                                                {
+                                                    "id": "4d5486e0-673d-4dcc-aa1e-926eb64bf125",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "91fdfa6a-f9e9-47a2-9697-61695ff01c6b",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "659ea404-e793-42b1-92c3-36c12785b6b7",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "b3cfd16a-5ef6-4e0b-b6f1-8eb1493e6c3a",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "8a97ee81-f4e2-4503-b7d0-ddefb4498697",
+                            "command": "EVENT_END"
+                        }
+                    ]
                 }
             ]
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "collisions": [],
+            "tileColors": [],
+            "id": "9b76cfee-847f-458d-8a06-e84afe517c46",
+            "x": 835.7999877929688,
+            "y": 196,
+            "actors": [],
+            "triggers": []
         }
     ],
     "_version": "2.0.0",
@@ -627,19 +1047,21 @@
         {
             "id": "72de2846-2c34-45bf-9f62-ff0f2e1283dd__L0",
             "name": "Inspected"
+        },
+        {
+            "id": "963f0d43-62e3-410d-8658-52352020fe83__L0",
+            "name": "Inspected"
+        },
+        {
+            "id": "d01965d8-aa1f-40d9-b984-861b5fab105c__L0",
+            "name": "Inspected"
+        },
+        {
+            "id": "90d28fb6-ce62-4e3b-9ee8-2c97f1ff70af__L0",
+            "name": "Inspected"
         }
     ],
     "backgrounds": [
-        {
-            "id": "ec2afaf5-cae6-49c4-a22e-5d28e6af16ba",
-            "name": "Scene1_Hallway",
-            "width": 24,
-            "height": 18,
-            "imageWidth": 192,
-            "imageHeight": 144,
-            "filename": "Scene1_Hallway.png",
-            "_v": 1599604396770
-        },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
             "name": "placeholder",
@@ -648,17 +1070,43 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1599604010367
+            "_v": 1599685041976
+        },
+        {
+            "id": "ec2afaf5-cae6-49c4-a22e-5d28e6af16ba",
+            "name": "Scene1_Hallway",
+            "width": 24,
+            "height": 18,
+            "imageWidth": 192,
+            "imageHeight": 144,
+            "filename": "Scene1_Hallway.png",
+            "_v": 1599685041976
         }
     ],
     "spriteSheets": [
+        {
+            "id": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+            "name": "Icon_Girl",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Icon_Girl.png",
+            "_v": 1599686937789
+        },
+        {
+            "id": "e95af522-fa37-4009-91ea-14421214ed71",
+            "name": "Icon_Mista",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Icon_Mista.png",
+            "_v": 1599686708763
+        },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
             "name": "actor",
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1599604010367
+            "_v": 1599685041976
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -666,7 +1114,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1599604010367
+            "_v": 1599685041976
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -674,7 +1122,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1599604010367
+            "_v": 1599685041976
         }
     ],
     "music": [
@@ -682,7 +1130,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1599604010365
+            "_v": 1599685041963
         }
     ],
     "customEvents": [],

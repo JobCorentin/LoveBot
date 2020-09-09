@@ -2,20 +2,889 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 0,
-        "worldScrollY": 0,
-        "zoom": 100,
-        "startX": 9,
-        "startY": 9,
-        "startDirection": "down",
-        "startSceneId": "",
+        "worldScrollX": 2140.800048828125,
+        "worldScrollY": 832,
+        "zoom": 400,
+        "customColorsWhite": "E8F8E0",
+        "customColorsLight": "B0F088",
+        "customColorsDark": "509878",
+        "customColorsBlack": "202850",
+        "defaultBackgroundPaletteIds": [
+            "default-bg-1",
+            "default-bg-2",
+            "default-bg-3",
+            "default-bg-4",
+            "default-bg-5",
+            "default-bg-6"
+        ],
+        "defaultSpritePaletteId": "default-sprite",
+        "defaultUIPaletteId": "default-ui",
+        "startX": 0,
+        "startY": 12,
+        "startDirection": "right",
+        "startSceneId": "196ad0a1-0094-4f2b-a999-3926170f6057",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd"
     },
-    "scenes": [],
-    "_version": "1.2.0",
+    "scenes": [
+        {
+            "name": "Scene 1",
+            "backgroundId": "ec2afaf5-cae6-49c4-a22e-5d28e6af16ba",
+            "width": 24,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "tileColors": [],
+            "id": "196ad0a1-0094-4f2b-a999-3926170f6057",
+            "x": 612,
+            "y": 198,
+            "actors": [],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "72de2846-2c34-45bf-9f62-ff0f2e1283dd",
+                    "x": 2,
+                    "y": 11,
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "c6c99fb9-20b9-49f8-b351-8060b858a175",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "b0dba94b-ee75-4d78-9b6e-c92c5c32e369",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "e25a6fdb-c929-4954-ad3e-fe53535bb1e0",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "3bc42058-fc28-4782-8b3c-d9b7f73e23c3",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nla plaque dit\nMr. M : Architect",
+                                                            "Ce n'est pas\nl'appart de Coco."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f1e09296-268a-4418-b081-01fb5937358a",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "L0"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "07bdc8c5-3297-4213-bf2d-dd3ed1c6f7a6",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "2c3e5dfb-40b2-422e-a52d-cdae5d5afab4",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "aefa077e-1d17-4904-913f-fa2d70ed6b20",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "fae31c7a-9300-4aaf-84e6-c9e8bf14a259",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "49e08951-5ce6-4c97-ab29-2366e2cdfde5",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nJe ne vais pas les\ndéranger."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "7cc08e88-51ab-45ed-93fc-8413f1f1d4ed",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "5342a9a8-32cc-4ced-8827-bec1fd186416",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "a58ab4d7-8fd5-4a2d-9d98-2d3292718a07",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "35820a23-1892-4ad1-9d42-5870a6aa0eda",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "963f0d43-62e3-410d-8658-52352020fe83",
+                    "x": 5,
+                    "y": 11,
+                    "width": 1,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "97a88b58-7f9e-403d-9bfb-ede1f0a54b9f",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "8e50ec47-b2a9-4bc7-a5c6-5e4eeff93e4f",
+                                        "command": "EVENT_IF_ACTOR_DIRECTION",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "direction": "up",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "a45446dc-7eb8-49fa-8a38-f9ad2a2a15bb",
+                                                    "command": "EVENT_TEXT",
+                                                    "args": {
+                                                        "text": [
+                                                            "Gwenn :\nC'est un parapluie\njaune..",
+                                                            "Il est très\nmignon."
+                                                        ],
+                                                        "avatarId": ""
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c5ab11ff-0422-4a68-821d-5ea729ffa1bf",
+                                                    "command": "EVENT_SET_TRUE",
+                                                    "args": {
+                                                        "variable": "L0"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "616db35d-7c0a-4f62-9063-817fb9ca1d8d",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "0da72225-cb75-449d-a592-74f82a245667",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "6a5474a0-109d-48b6-9848-e8cdaf60d9ab",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "5a1b00b2-5b5b-4760-9923-0a75549ba5c6",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "L0",
+                                            "__collapseElse": false,
+                                            "__collapse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "13b8fd5a-a29e-417b-a79e-efee95f89874",
+                                                    "command": "EVENT_IF_ACTOR_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "direction": "up",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "2732081d-e37b-4a33-8444-de3b13303bae",
+                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                "args": {
+                                                                    "actorId": "$self$",
+                                                                    "emoteId": "1"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "e4e8d2e4-52ae-4d78-8b1b-07471570763c",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Gwenn :\nTiens il y a une\nétiquette.",
+                                                                        "\"Ce parapluie\nappartient à\nTracy.\""
+                                                                    ],
+                                                                    "avatarId": ""
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "d266a729-2149-47f1-9e5c-a3970f13a709",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "81566e2d-883d-401e-91d1-94e2d76dd8e0",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "e05153bf-7711-4962-b45f-c5bda806a038",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "52a9a7a6-e8ea-44da-b184-7a98bf9e4501",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "58c4cdf5-4604-4f93-bc01-e7a4f1b8b3ea",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "bf93af4a-a35d-4f65-9fe5-b235379c00de",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "d01965d8-aa1f-40d9-b984-861b5fab105c",
+                    "x": 11,
+                    "y": 11,
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "a109240c-16f6-4d61-b980-4037b35d607a",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "6562153c-64d0-4d2e-973b-f454035f04f0",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwen :\nAppartement de.."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "6d21b658-2170-4657-ba4d-a633bc3f51de",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": 0
+                                        }
+                                    },
+                                    {
+                                        "id": "c778f344-4c60-476b-b24e-569ee5d51880",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Mista :\nC'est pour ?\nDépechez-vous",
+                                                "avant que je\nperde patience."
+                                            ],
+                                            "avatarId": "e95af522-fa37-4009-91ea-14421214ed71"
+                                        }
+                                    },
+                                    {
+                                        "id": "ce202d94-b4ab-429c-a06c-f575b676d20c",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "5"
+                                        }
+                                    },
+                                    {
+                                        "id": "acc6133f-f40c-446e-b440-1d4078bb693f",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nHeu.. je..\nme suis trompé",
+                                                "d'appartement\nExcusez-moi.."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "f760c6e9-6e5b-4710-bd31-63d75c1ae1c3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Mista :\nAller déguerpi\nd'ici."
+                                            ],
+                                            "avatarId": "e95af522-fa37-4009-91ea-14421214ed71"
+                                        }
+                                    },
+                                    {
+                                        "id": "293295fd-e96c-4739-be2a-9cbe7b068b0b",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwen :\nIl avait un\nflingue !",
+                                                "Mais c'est quoi\ncette endroit !"
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "4502733e-564a-4cd4-901d-0f646bc8d55e",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "9460dbc7-a9d6-4e3c-a183-dc59d37aab39",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "6ffbfbe8-c59e-4c89-888e-4eb3485bca17",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nOn va éviter d'y\nretourner..."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "8e27733c-1a42-4b1d-9847-9b483a9dd39f",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "76589227-3d9f-449b-83fa-1947d1f5e57c",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "trigger": "walk",
+                    "id": "90d28fb6-ce62-4e3b-9ee8-2c97f1ff70af",
+                    "x": 20,
+                    "y": 11,
+                    "width": 2,
+                    "height": 1
+                }
+            ]
+        }
+    ],
+    "_version": "2.0.0",
     "author": "jobco",
     "name": "LoveBot",
-    "variables": [],
+    "variables": [
+        {
+            "id": "967cbd8b-f8b4-41ea-9393-537c21bbcc52__L0",
+            "name": "Inspect"
+        },
+        {
+            "id": "72de2846-2c34-45bf-9f62-ff0f2e1283dd__L0",
+            "name": "Inspected"
+        },
+        {
+            "id": "963f0d43-62e3-410d-8658-52352020fe83__L0",
+            "name": "Inspected"
+        },
+        {
+            "id": "d01965d8-aa1f-40d9-b984-861b5fab105c__L0",
+            "name": "Inspected"
+        }
+    ],
     "backgrounds": [
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -25,17 +894,43 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1561399228204
+            "_v": 1599685041976
+        },
+        {
+            "id": "ec2afaf5-cae6-49c4-a22e-5d28e6af16ba",
+            "name": "Scene1_Hallway",
+            "width": 24,
+            "height": 18,
+            "imageWidth": 192,
+            "imageHeight": 144,
+            "filename": "Scene1_Hallway.png",
+            "_v": 1599685041976
         }
     ],
     "spriteSheets": [
+        {
+            "id": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+            "name": "Icon_Girl",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Icon_Girl.png",
+            "_v": 1599686937789
+        },
+        {
+            "id": "e95af522-fa37-4009-91ea-14421214ed71",
+            "name": "Icon_Mista",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Icon_Mista.png",
+            "_v": 1599686708763
+        },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
             "name": "actor",
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1561399228204
+            "_v": 1599685041976
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -43,7 +938,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1561399228204
+            "_v": 1599685041976
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -51,7 +946,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1561399228204
+            "_v": 1599685041976
         }
     ],
     "music": [
@@ -59,7 +954,146 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1561399228201
+            "_v": 1599685041963
+        }
+    ],
+    "customEvents": [],
+    "palettes": [
+        {
+            "id": "default-bg-1",
+            "name": "Default BG 1",
+            "colors": [
+                "F8E8C8",
+                "D89048",
+                "A82820",
+                "301850"
+            ],
+            "defaultName": "Default BG 1",
+            "defaultColors": [
+                "F8E8C8",
+                "D89048",
+                "A82820",
+                "301850"
+            ]
+        },
+        {
+            "id": "default-bg-2",
+            "name": "Default BG 2",
+            "colors": [
+                "E0F8A0",
+                "78C838",
+                "488818",
+                "081800"
+            ],
+            "defaultName": "Default BG 2",
+            "defaultColors": [
+                "E0F8A0",
+                "78C838",
+                "488818",
+                "081800"
+            ]
+        },
+        {
+            "id": "default-bg-3",
+            "name": "Default BG 3",
+            "colors": [
+                "F8D8A8",
+                "E0A878",
+                "785888",
+                "002030"
+            ],
+            "defaultName": "Default BG 3",
+            "defaultColors": [
+                "F8D8A8",
+                "E0A878",
+                "785888",
+                "002030"
+            ]
+        },
+        {
+            "id": "default-bg-4",
+            "name": "Default BG 4",
+            "colors": [
+                "B8D0D0",
+                "D880D8",
+                "8000A0",
+                "380000"
+            ],
+            "defaultName": "Default BG 4",
+            "defaultColors": [
+                "B8D0D0",
+                "D880D8",
+                "8000A0",
+                "380000"
+            ]
+        },
+        {
+            "id": "default-bg-5",
+            "name": "Default BG 5",
+            "colors": [
+                "F8F8B8",
+                "90C8C8",
+                "486878",
+                "082048"
+            ],
+            "defaultName": "Default BG 5",
+            "defaultColors": [
+                "F8F8B8",
+                "90C8C8",
+                "486878",
+                "082048"
+            ]
+        },
+        {
+            "id": "default-bg-6",
+            "name": "Default BG 6",
+            "colors": [
+                "F8D8B0",
+                "78C078",
+                "688840",
+                "583820"
+            ],
+            "defaultName": "Default BG 6",
+            "defaultColors": [
+                "F8D8B0",
+                "78C078",
+                "688840",
+                "583820"
+            ]
+        },
+        {
+            "id": "default-sprite",
+            "name": "Default Sprites",
+            "colors": [
+                "F8F0E0",
+                "D88078",
+                "B05010",
+                "000000"
+            ],
+            "defaultName": "Default Sprites",
+            "defaultColors": [
+                "F8F0E0",
+                "D88078",
+                "B05010",
+                "000000"
+            ]
+        },
+        {
+            "id": "default-ui",
+            "name": "Default UI",
+            "colors": [
+                "F8F8B8",
+                "90C8C8",
+                "486878",
+                "082048"
+            ],
+            "defaultName": "Default UI",
+            "defaultColors": [
+                "F8F8B8",
+                "90C8C8",
+                "486878",
+                "082048"
+            ]
         }
     ]
 }
