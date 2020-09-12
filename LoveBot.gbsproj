@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1152,
-        "worldScrollY": 200,
-        "zoom": 200,
+        "worldScrollX": 1397.5999755859375,
+        "worldScrollY": 497.6000061035156,
+        "zoom": 262.5,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -511,10 +511,10 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Gwenn :\nla plaque dit\nMr. M : Architect",
-                                                            "Ce n'est pas\nl'appart de Coco."
+                                                            "Gwenn :\nla plaque dit\nMr. M : Architec",
+                                                            "Ce n'est pas\nl'appart de\nCoco."
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
                                                     }
                                                 },
                                                 {
@@ -558,9 +558,9 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Gwenn :\nJe ne vais pas les\ndéranger."
+                                                            "Gwenn :\nJe ne vais pas\nles"
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
                                                     }
                                                 },
                                                 {
@@ -621,10 +621,10 @@
                                                     "command": "EVENT_TEXT",
                                                     "args": {
                                                         "text": [
-                                                            "Gwenn :\nC'est un parapluie\njaune..",
+                                                            "Gwenn :\nC'est un\nparapluie",
                                                             "Il est très\nmignon."
                                                         ],
-                                                        "avatarId": ""
+                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
                                                     }
                                                 },
                                                 {
@@ -689,7 +689,7 @@
                                                                         "Gwenn :\nTiens il y a une\nétiquette.",
                                                                         "\"Ce parapluie\nappartient à\nTracy.\""
                                                                     ],
-                                                                    "avatarId": ""
+                                                                    "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
                                                                 }
                                                             },
                                                             {
@@ -977,18 +977,6 @@
                                                     }
                                                 },
                                                 {
-                                                    "id": "dc74f13c-c31a-4351-8bf3-6f439f2859b5",
-                                                    "command": "EVENT_SWITCH_SCENE",
-                                                    "args": {
-                                                        "sceneId": "9b76cfee-847f-458d-8a06-e84afe517c46",
-                                                        "x": 8,
-                                                        "y": 15,
-                                                        "direction": "up",
-                                                        "fadeSpeed": "2",
-                                                        "__collapse": true
-                                                    }
-                                                },
-                                                {
                                                     "id": "bdfcdbfc-2e00-4537-9460-53d11b473e54",
                                                     "command": "EVENT_SWITCH_SCENE",
                                                     "args": {
@@ -996,7 +984,8 @@
                                                         "x": 9,
                                                         "y": 14,
                                                         "direction": "up",
-                                                        "fadeSpeed": "2"
+                                                        "fadeSpeed": "2",
+                                                        "__collapse": true
                                                     }
                                                 },
                                                 {
@@ -1031,10 +1020,27 @@
                         }
                     ]
                 }
+            ],
+            "script": [
+                {
+                    "id": "df802a32-2e6d-4c51-bc7e-bc3b67a1d796",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Gwenn :\nEnfin arrivé !\nc'est le ",
+                            "moment de\nlui faire une\nsurprise !"
+                        ],
+                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                    }
+                },
+                {
+                    "id": "f21a489a-64c8-44bb-a691-d9fef51476b6",
+                    "command": "EVENT_END"
+                }
             ]
         },
         {
-            "name": "Scene 2",
+            "name": "Scene 2 - Room",
             "backgroundId": "41dda7ce-b2aa-4a7c-a3a6-d02756432e51",
             "width": 20,
             "height": 18,
@@ -1404,8 +1410,1832 @@
             "id": "5cb7a498-5698-4603-bc97-0671a7aefb56",
             "x": 816,
             "y": 192.5,
+            "actors": [
+                {
+                    "spriteSheetId": "3eef18d2-714d-41e9-be62-6687b2656b44",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "03e0ff8b-a5c6-4410-b4af-079d91e2809f",
+                    "x": 6,
+                    "y": 7,
+                    "animate": false,
+                    "script": [
+                        {
+                            "id": "1354951b-c3e9-4809-8008-6ec705631bd7",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "1",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "47cb2d22-c2ab-4688-b8db-e5d071b4336f",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Bot :\nbeep...\nboop..."
+                                            ],
+                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "9cb2f694-8b8b-498e-9dd4-d77180e98723",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nTiens un.. robot\n?",
+                                                "c'est coco qui\nla fabriquée ?"
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "d98eaa5f-b8c2-444d-ac93-1794aa0412a4",
+                                        "command": "EVENT_ACTOR_SET_ANIMATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "animate": true,
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "87e34fb9-3205-42b7-ac4e-286db184cddb",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Bot:\nAnalyse facial..\nYo Gwennou"
+                                            ],
+                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "cde64db0-ec98-492a-a438-2ab959fc36d6",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": 0,
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "841ec1eb-d12e-4c05-bea1-c23d7250d0a3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nIl m'a reconnu\n!?"
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "ee98e663-85ac-451b-b23c-00daffc56ec6",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Bot :\nj'ai un cadeau\npour toi..."
+                                            ],
+                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "3a0fcc4f-3577-48c0-97bb-efa77be31cb2",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nC'est vrai ?!"
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "bdffb4af-1c14-47c3-b7ba-1916180f2b9a",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Bot :\nOui à condition\nque tu répondes",
+                                                "ces 5\nQUESTIONS !"
+                                            ],
+                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "be2aa40b-59e9-4ea4-bfc8-d152e4275981",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nOk....?"
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "f27a603c-c0e2-4e9c-807c-e91666386196",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Bot :\nReparle moi\nquand",
+                                                "tu voudras\nrépondre aux\nquestions"
+                                            ],
+                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e",
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "08bc1495-2242-4eff-94a9-858c6d38b368",
+                                        "command": "EVENT_ACTOR_SET_ANIMATE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "animate": false,
+                                            "__collapse": true
+                                        }
+                                    },
+                                    {
+                                        "id": "ba66872a-7977-4110-b741-b541f33157a8",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "1"
+                                        }
+                                    },
+                                    {
+                                        "id": "40850845-8afc-41cd-af60-46383846b64c",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "3641b3db-4550-45de-a0b2-f81926584801",
+                                        "command": "EVENT_IF_TRUE",
+                                        "args": {
+                                            "variable": "1",
+                                            "__collapseElse": false
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "65a7a220-3d6a-47c0-80d2-406e59a431f0",
+                                                    "command": "EVENT_IF_FALSE",
+                                                    "args": {
+                                                        "variable": "2",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "6ac071c1-709e-4863-a58b-3732312edb45",
+                                                                "command": "EVENT_TEXT",
+                                                                "args": {
+                                                                    "text": [
+                                                                        "Bot :\n1ère question !\nlequel de nos",
+                                                                        "amis est en fac\nde philo ?"
+                                                                    ],
+                                                                    "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "f6ac0849-91f9-48c9-99e8-a97871ae3494",
+                                                                "command": "EVENT_CHOICE",
+                                                                "args": {
+                                                                    "variable": "2",
+                                                                    "trueText": "Guillaume",
+                                                                    "falseText": "Erwan"
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "eb157464-9437-4c22-a883-af57fcc7c862",
+                                                                "command": "EVENT_IF_FALSE",
+                                                                "args": {
+                                                                    "variable": "2",
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "fba6297d-8d1f-4277-9f74-b49564f32015",
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "emoteId": "4"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "b4e39e02-59d9-4812-a827-61e2cae72904",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "FAUX !\nbha quand\nmême !",
+                                                                                    "On les a vu\npendant les vac\n!"
+                                                                                ],
+                                                                                "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "42049879-6a0f-4eb7-8029-dd28ebd4c837",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "5585a786-ef5e-4f02-9bf8-71620fb9d814",
+                                                                            "command": "EVENT_ACTOR_SET_ANIMATE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "animate": true
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "41a5dc09-2c26-4fa2-9969-1dc4f106cd56",
+                                                                            "command": "EVENT_ACTOR_EMOTE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "emoteId": 0
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "95b2f210-af81-43a5-9b4f-fa244a12c975",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "VRAI !\ntrès bonne\nréponse !",
+                                                                                    "Bon.. en\nmême temps\nc'est facile"
+                                                                                ],
+                                                                                "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "54362053-71ce-4d92-a527-5934ff847e50",
+                                                                            "command": "EVENT_SET_TRUE",
+                                                                            "args": {
+                                                                                "variable": "2"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "628641bc-eeca-4044-9763-03750a189c62",
+                                                                            "command": "EVENT_ACTOR_SET_ANIMATE",
+                                                                            "args": {
+                                                                                "actorId": "$self$",
+                                                                                "animate": false
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "9ede883e-a6e6-4f59-8f4f-e9a1b04e891d",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "7544da96-c4fe-49be-9143-b2399740c1db",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "a8c0362d-a77c-4617-a566-45ece6745653",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "42364de1-8d4e-4a4e-aabe-1ceed9c371cf",
+                                                    "command": "EVENT_IF_TRUE",
+                                                    "args": {
+                                                        "variable": "2",
+                                                        "__collapseElse": false
+                                                    },
+                                                    "children": {
+                                                        "true": [
+                                                            {
+                                                                "id": "2d661f18-5f92-47b9-906a-817d32a38309",
+                                                                "command": "EVENT_IF_FALSE",
+                                                                "args": {
+                                                                    "variable": "3",
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "94eb4159-5a05-4894-8126-368fbe417116",
+                                                                            "command": "EVENT_TEXT",
+                                                                            "args": {
+                                                                                "text": [
+                                                                                    "Bot :\n2e question !\nquel saint est",
+                                                                                    "fêté le 12\ndécembre ?"
+                                                                                ],
+                                                                                "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "dee6ce22-df21-48ea-bceb-d8fb1e853b1a",
+                                                                            "command": "EVENT_CHOICE",
+                                                                            "args": {
+                                                                                "variable": "3",
+                                                                                "trueText": "Corentin",
+                                                                                "falseText": "Chantal"
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "703e9831-9829-4f7f-80bf-d989cb878f90",
+                                                                            "command": "EVENT_IF_FALSE",
+                                                                            "args": {
+                                                                                "variable": "3",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "7fc0f553-e794-4742-9c90-03422ffce0c1",
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "$self$",
+                                                                                            "emoteId": "4"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "b5e81987-c850-4289-a9dc-108df46d60cb",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Bot :\nFAUX !\nenfin c'est",
+                                                                                                "vrai mais\nquand même\nc'est faux"
+                                                                                            ],
+                                                                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "b33f5c3b-3504-4a8b-976e-6b149e0634e9",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Gwenn :\nSacrée Kaourant."
+                                                                                            ],
+                                                                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "22b9eab6-d2a8-4643-95c9-211487379e1e",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "id": "46100207-579e-4f48-8290-d2f3cf78a8b4",
+                                                                                        "command": "EVENT_ACTOR_SET_ANIMATE",
+                                                                                        "args": {
+                                                                                            "actorId": "$self$",
+                                                                                            "animate": true
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "0148533a-46e3-42d7-9f82-062b13dd6a5b",
+                                                                                        "command": "EVENT_ACTOR_EMOTE",
+                                                                                        "args": {
+                                                                                            "actorId": "$self$",
+                                                                                            "emoteId": 0
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "3d7ba007-21ac-40a0-8e44-991ea3343a5e",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Bot :\nVRAI !\nbonne rep",
+                                                                                                "j'ai toujours \npas eu \nde cadeau",
+                                                                                                "pour ma\nfête mais\nbon.."
+                                                                                            ],
+                                                                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "a2216db6-f238-41aa-8ab4-32ce8d1c811d",
+                                                                                        "command": "EVENT_ACTOR_SET_ANIMATE",
+                                                                                        "args": {
+                                                                                            "actorId": "$self$",
+                                                                                            "animate": false
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "bed2c8c1-dbf7-453a-a929-b76733ac375b",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "b23a0073-9147-444d-b744-ea17d98e36be",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "33c20294-65c1-4862-8e3a-4c988cb01a69",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "1ebc711c-0094-4980-abcb-353c9708b7f5",
+                                                                "command": "EVENT_IF_TRUE",
+                                                                "args": {
+                                                                    "variable": "3",
+                                                                    "__collapseElse": false
+                                                                },
+                                                                "children": {
+                                                                    "true": [
+                                                                        {
+                                                                            "id": "8d3c4b7e-7cbd-4446-8a63-3743b858ccc7",
+                                                                            "command": "EVENT_IF_FALSE",
+                                                                            "args": {
+                                                                                "variable": "4",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "fa875125-a8db-4bcc-a78e-bc61da9bfbfe",
+                                                                                        "command": "EVENT_TEXT",
+                                                                                        "args": {
+                                                                                            "text": [
+                                                                                                "Bot :\n3e question\nQuelle est le",
+                                                                                                "nom de \nl'héroine\nde mon",
+                                                                                                "projet de fin\nd'année ?"
+                                                                                            ],
+                                                                                            "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "94e9a921-48f9-430f-9937-be95b1c3c41f",
+                                                                                        "command": "EVENT_CHOICE",
+                                                                                        "args": {
+                                                                                            "variable": "4",
+                                                                                            "trueText": "Inoh",
+                                                                                            "falseText": "Vespa"
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "ad1801a5-b402-49af-9624-a9170c019758",
+                                                                                        "command": "EVENT_IF_FALSE",
+                                                                                        "args": {
+                                                                                            "variable": "4",
+                                                                                            "__collapseElse": false
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "c2c7e149-0d93-4793-8bbc-85cff3bdcf71",
+                                                                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                                                                    "args": {
+                                                                                                        "actorId": "$self$",
+                                                                                                        "emoteId": "4"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "345b5070-a92f-4e0a-8bbf-694d7f2164eb",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "FAUX !\nArchi\nfaux !",
+                                                                                                            "même\nsi je prefère\nVespa",
+                                                                                                            "c'est pas\nelle."
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "b3ed87df-6833-4bf7-bb28-2dc1a8e8e76b",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ],
+                                                                                            "false": [
+                                                                                                {
+                                                                                                    "id": "b63410e5-d4f3-478c-be85-e2e601b2c5d6",
+                                                                                                    "command": "EVENT_ACTOR_SET_ANIMATE",
+                                                                                                    "args": {
+                                                                                                        "actorId": "$self$",
+                                                                                                        "animate": true
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "3386e990-676c-4bb5-9559-ff16da8093cd",
+                                                                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                                                                    "args": {
+                                                                                                        "actorId": "$self$",
+                                                                                                        "emoteId": 0
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "89f67a8b-b946-4139-a769-2017f01e65fe",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "VRAI !\nc'est bien\nelle !",
+                                                                                                            "C'est le\nnom du jeu\ndonc ez"
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "a3a38c93-2012-4b47-be44-59315e5387f5",
+                                                                                                    "command": "EVENT_ACTOR_SET_ANIMATE",
+                                                                                                    "args": {
+                                                                                                        "actorId": "$self$",
+                                                                                                        "animate": false
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "1bd42af6-4961-4aaf-9679-815132c79a9d",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "b03fbefd-dd73-498c-98d7-fc429143613a",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "id": "bdd356cb-d7d0-498c-83ab-337284ea6338",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "0fc59925-678d-4065-a04b-acdbe0c651bc",
+                                                                            "command": "EVENT_IF_TRUE",
+                                                                            "args": {
+                                                                                "variable": "4",
+                                                                                "__collapseElse": false
+                                                                            },
+                                                                            "children": {
+                                                                                "true": [
+                                                                                    {
+                                                                                        "id": "a490025b-e762-4165-932f-4964d11a8645",
+                                                                                        "command": "EVENT_IF_FALSE",
+                                                                                        "args": {
+                                                                                            "variable": "5",
+                                                                                            "__collapseElse": false
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "f1d05aa4-03ef-45fb-aa4b-7ba6c9dd6213",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Bot :\n4e question\nAvec qui",
+                                                                                                            "Haida fini\nà la fin de la\nS3",
+                                                                                                            "de\nAggretsuko\n?"
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "1473b196-759d-4c7f-b1c7-268304b802e3",
+                                                                                                    "command": "EVENT_CHOICE",
+                                                                                                    "args": {
+                                                                                                        "variable": "5",
+                                                                                                        "trueText": "Restuko",
+                                                                                                        "falseText": "Inui"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "5b240acc-6cef-41a8-be5d-a10dea9a589c",
+                                                                                                    "command": "EVENT_IF_FALSE",
+                                                                                                    "args": {
+                                                                                                        "variable": "5",
+                                                                                                        "__collapseElse": false
+                                                                                                    },
+                                                                                                    "children": {
+                                                                                                        "true": [
+                                                                                                            {
+                                                                                                                "id": "b217d0b0-6ec8-4dab-96e5-2584d16bb7c0",
+                                                                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                                                                "args": {
+                                                                                                                    "actorId": "$self$",
+                                                                                                                    "emoteId": "4"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "8f205e5f-aaef-4adb-9137-3614771b29d1",
+                                                                                                                "command": "EVENT_TEXT",
+                                                                                                                "args": {
+                                                                                                                    "text": [
+                                                                                                                        "Bot :\nFaux !\nbha alors",
+                                                                                                                        "on à\npas fini ?"
+                                                                                                                    ],
+                                                                                                                    "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "70692744-2d33-405b-834f-62dfc67d1e6a",
+                                                                                                                "command": "EVENT_END"
+                                                                                                            }
+                                                                                                        ],
+                                                                                                        "false": [
+                                                                                                            {
+                                                                                                                "id": "05b410ae-2e85-4f16-9491-3c5bc38ae9d1",
+                                                                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                                                                "args": {
+                                                                                                                    "actorId": "$self$",
+                                                                                                                    "emoteId": 0
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "e4d8e27d-cfbb-4d6a-bcf9-17bf51c52328",
+                                                                                                                "command": "EVENT_TEXT",
+                                                                                                                "args": {
+                                                                                                                    "text": [
+                                                                                                                        "Vrai !\nMais bon\nca ma",
+                                                                                                                        "pas attendu\npour finir."
+                                                                                                                    ],
+                                                                                                                    "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "e88d2c34-682b-480f-8b63-84d086a854be",
+                                                                                                                "command": "EVENT_TEXT",
+                                                                                                                "args": {
+                                                                                                                    "text": [
+                                                                                                                        "Gwenn :\nBha comment\ntu connais la",
+                                                                                                                        "réponse si\ntu la pas\nfini ?"
+                                                                                                                    ],
+                                                                                                                    "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "d51cb45d-a202-46e1-8396-4f72c60eb464",
+                                                                                                                "command": "EVENT_ACTOR_EMOTE",
+                                                                                                                "args": {
+                                                                                                                    "actorId": "$self$",
+                                                                                                                    "emoteId": "5"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "ae2d0fd3-4931-40ab-9aca-c10b49db9076",
+                                                                                                                "command": "EVENT_TEXT",
+                                                                                                                "args": {
+                                                                                                                    "text": [
+                                                                                                                        "Bot:\nBeep\nBoop !"
+                                                                                                                    ],
+                                                                                                                    "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            {
+                                                                                                                "id": "03d3f27d-1d80-42c5-bc19-e29401f4529c",
+                                                                                                                "command": "EVENT_END"
+                                                                                                            }
+                                                                                                        ]
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "223bff3e-dd68-4b5c-b275-365723fb2795",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ],
+                                                                                            "false": [
+                                                                                                {
+                                                                                                    "id": "69ece7da-91cc-44aa-a2a0-f26c5b90ef6e",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "3e12cfb7-0901-4725-8289-8a5d909649c1",
+                                                                                        "command": "EVENT_IF_TRUE",
+                                                                                        "args": {
+                                                                                            "variable": "5",
+                                                                                            "__collapseElse": false
+                                                                                        },
+                                                                                        "children": {
+                                                                                            "true": [
+                                                                                                {
+                                                                                                    "id": "e759b383-46c4-4c2e-9de1-aebb7ebd00d9",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Bot:\nDernière\nquestion !",
+                                                                                                            "Je t'aime.."
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "7eab2649-14dd-4137-9a2e-fc21545d3032",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Gwenn :\nà la\nfolie !"
+                                                                                                        ],
+                                                                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "98cf2f94-d9be-458c-bfe9-61de765578a0",
+                                                                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                                                                    "args": {
+                                                                                                        "actorId": "$self$",
+                                                                                                        "emoteId": 0
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "6cb51a78-3878-4e5d-9368-a82aebf258ec",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Bot:\nBonne\nréponse !",
+                                                                                                            "Félicitation\nvoici ta \nrécompense",
+                                                                                                            "bzzzt..\nbzzzt..\nbzzzt.."
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "927c5820-01ca-4751-a5b7-c5d044e8ed45",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Gwenn:\nqu'es que\ntu fais ?"
+                                                                                                        ],
+                                                                                                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c1a3d4d2-eee5-49d0-8e67-0689c82d11f9",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Bot:\nJ'imprimme\nbzzzt..",
+                                                                                                            "bzzzzt..\nbzzzt..\nbzzzzzt.."
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "93be7825-5fc0-469e-b2c6-7e25dd966fa0",
+                                                                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                                                                    "args": {
+                                                                                                        "actorId": "player",
+                                                                                                        "emoteId": "7"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "c6a76107-d5d6-42c2-8dc6-76c69294c284",
+                                                                                                    "command": "EVENT_TEXT",
+                                                                                                    "args": {
+                                                                                                        "text": [
+                                                                                                            "Bot:\nC'est bon\nvoila la",
+                                                                                                            "lettre."
+                                                                                                        ],
+                                                                                                        "avatarId": "e6f9d87c-deac-4ee1-bc98-401244b62b1e"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "90902977-4e7d-4736-bc38-c8469020077d",
+                                                                                                    "command": "EVENT_SWITCH_SCENE",
+                                                                                                    "args": {
+                                                                                                        "sceneId": "f5d56f40-f8bb-407f-af2f-c293ddc88270",
+                                                                                                        "x": 9,
+                                                                                                        "y": 17,
+                                                                                                        "direction": "up",
+                                                                                                        "fadeSpeed": "5"
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "id": "f723346a-352a-418b-b28b-98d7dab16b4c",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ],
+                                                                                            "false": [
+                                                                                                {
+                                                                                                    "id": "755ec7a3-a364-4f78-8c58-a83c0d5a57ee",
+                                                                                                    "command": "EVENT_END"
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "id": "f25d9688-4e77-4aba-8bcf-5a5615c3f9ce",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ],
+                                                                                "false": [
+                                                                                    {
+                                                                                        "id": "4174f0cf-d98a-4735-9ea3-78ac5dd273d2",
+                                                                                        "command": "EVENT_END"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        },
+                                                                        {
+                                                                            "id": "4473dde8-2604-4943-aad4-a657b475f9f3",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ],
+                                                                    "false": [
+                                                                        {
+                                                                            "id": "ec4c616c-4a90-4e27-82b5-26cbb1a85e9b",
+                                                                            "command": "EVENT_END"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            },
+                                                            {
+                                                                "id": "2ad9210a-b6b9-4b2f-a129-df3c7b184417",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ],
+                                                        "false": [
+                                                            {
+                                                                "id": "79070b66-7bb6-46b8-9cad-f807b759a111",
+                                                                "command": "EVENT_END"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c16e0185-0c49-41fc-8c03-a153e0affe3a",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ],
+                                            "false": [
+                                                {
+                                                    "id": "36bd5259-7fee-4aa8-8b32-d7e89f5cf6c6",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "id": "795419f6-a876-4321-a6f2-29206203c956",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "88a32506-4979-480f-96ec-c50ba92e4a9e",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Love_Bot"
+                },
+                {
+                    "spriteSheetId": "6023c87d-078f-43ce-bce1-4bf50975a57a",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "23f508d5-20d0-4387-96d4-fbf08b54c8b4",
+                    "x": 4,
+                    "y": 8,
+                    "name": "Bed_Interaction",
+                    "script": [
+                        {
+                            "id": "7787d9d5-e3a9-40d7-850b-6ed094235aa9",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "2dfeb126-ff6e-4545-89bb-4795544d4b30",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nHo c'est\nPsykokwak!",
+                                                "...\nIl est tout sale\nsuper."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "8c05c601-32f5-4eef-bf30-d07a44ff28db",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "4"
+                                        }
+                                    },
+                                    {
+                                        "id": "eff622e5-3a4c-47ea-a62f-66ae78683f40",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "62e1d006-44b5-4663-aaf4-49aa5d820624",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "5eb82ce8-eabb-461e-b76e-d0d10a633e67",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJe vois qu'il\nchange toujours",
+                                                "pas ses draps.."
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "1ff49433-f9de-4872-b3e5-5bf690a163ea",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3b0c4777-1b77-4353-906c-aa46e03ad914",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "6023c87d-078f-43ce-bce1-4bf50975a57a",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "2f7a4ce2-797a-4b3a-bf89-5e417a4fc5b6",
+                    "x": 14,
+                    "y": 7,
+                    "script": [
+                        {
+                            "id": "d7ef69d1-3aa0-4d33-ae95-4caac834ce3f",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "8a0805c0-57bc-4f6e-9b1e-c4135a70c31f",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nTiens son\nnouveau piano",
+                                                "Ho il y a une \nmusique pré\nenregistrée.."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "d6f7178d-e9b0-44b4-955c-f99dbd8a626e",
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "4a8b90fb-5e7f-4d8e-b516-9ba6cede878a",
+                                            "loop": true
+                                        }
+                                    },
+                                    {
+                                        "id": "cea5d477-4098-4990-8479-6f6d4f4a72c9",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "0"
+                                        }
+                                    },
+                                    {
+                                        "id": "79d694eb-1110-48c8-8858-26edf6d54c64",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJolie berceuse."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "b58f2a6d-efea-4db5-a11c-b97277bdc299",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "f54f5640-aaf7-41e9-ba6f-03c5b6cfc61b",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJ'espère qu'il\ncontinue de",
+                                                "prendre le temps\nde faire du\npiano."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "d8e0728d-1c64-4c63-ba90-52a4dcb88c7b",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "867a6768-184a-4cd4-a4a7-fd5da4e90de8",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Piano_Interaction"
+                },
+                {
+                    "spriteSheetId": "6023c87d-078f-43ce-bce1-4bf50975a57a",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "4ac42f73-2ee1-4598-aa1e-6c887ff10c67",
+                    "x": 4,
+                    "y": 11,
+                    "script": [
+                        {
+                            "id": "08ac1784-b87f-46c8-b4e4-f0f9232c2724",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "7a277063-c2b1-4025-ad78-fbc99cb29f69",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nSon pc\nouvert",
+                                                "voyons voir\nle mdp\nhabituel..."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "41d565e0-5555-4dc3-a21d-f3a0a216ae8c",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": 0
+                                        }
+                                    },
+                                    {
+                                        "id": "7086f530-fabf-4919-9e0b-f201d59dcf70",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "QUOI !?",
+                                                "Gwenn :\nil a modif \nle mdp !!"
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "80bc7a58-6d27-4423-a9c2-fc760ad74dc3",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "a87c1718-a6a4-4dd0-9621-9551f68635ef",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "85949518-b599-4823-b342-6752579d2ffc",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJ'ai pas le\nmdp",
+                                                "tro chiant."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "4ec7dc03-f7b6-47b2-9ba2-e35dd7fba0bf",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "c47f7f9d-a418-4666-aa55-b61f11da88a9",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Interact_PC"
+                },
+                {
+                    "spriteSheetId": "6023c87d-078f-43ce-bce1-4bf50975a57a",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "81d23325-ecbf-45ca-8968-c70ac572b2ef",
+                    "x": 14,
+                    "y": 8,
+                    "script": [
+                        {
+                            "id": "93556af8-68a8-44a8-9299-3650fe0d2808",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "47eb648d-21a6-4974-a5c2-d4a89a77ddf5",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nTiens son\nnouveau piano",
+                                                "Ho il y a une \nmusique pré\nenregistrée.."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "1e81e2e6-30da-4f77-8da8-641d52761c0d",
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "4a8b90fb-5e7f-4d8e-b516-9ba6cede878a",
+                                            "loop": true
+                                        }
+                                    },
+                                    {
+                                        "id": "60b2c591-4d08-4fee-8ba3-9ba7f9a004d9",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "0"
+                                        }
+                                    },
+                                    {
+                                        "id": "1b139046-dfec-479d-8a40-c28270c69f13",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJolie berceuse."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "332212ba-d8e4-43ae-8b38-2ef9a0c821d9",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "50da7755-246f-4fde-9ee4-a730c47ec2bd",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJ'espère qu'il\ncontinue de",
+                                                "prendre le temps\nde faire du\npiano."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "35c50534-e007-48f6-a327-38b8c187ade2",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "1bf08373-735c-46bf-95e1-2975af78319f",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Piano_Interaction"
+                },
+                {
+                    "spriteSheetId": "6023c87d-078f-43ce-bce1-4bf50975a57a",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "b4f77d3f-e2a1-4132-a7ce-ccc3da5dba0c",
+                    "x": 14,
+                    "y": 6,
+                    "script": [
+                        {
+                            "id": "9abaa015-da11-4a5a-848a-29ddb7a5fbee",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "29ca96c8-c3ad-432c-bd12-7e4b1559b780",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nTiens son\nnouveau piano",
+                                                "Ho il y a une \nmusique pré\nenregistrée.."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "6d67169e-6f0e-4912-add4-4e94a76f2586",
+                                        "command": "EVENT_MUSIC_PLAY",
+                                        "args": {
+                                            "musicId": "4a8b90fb-5e7f-4d8e-b516-9ba6cede878a",
+                                            "loop": true
+                                        }
+                                    },
+                                    {
+                                        "id": "4171d674-24a9-4583-a135-8faef6a83176",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "0"
+                                        }
+                                    },
+                                    {
+                                        "id": "3ad369fa-eff1-4df2-a6a1-058dbc0d0196",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJolie berceuse."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "1390299c-b007-4031-87a1-af8110c47ff1",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "ae63d3ad-3f67-4fa8-a917-936364b600a3",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "Gwenn :\nJ'espère qu'il\ncontinue de",
+                                                "prendre le temps\nde faire du\npiano."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "bdc759c6-7f9a-4155-b422-1717fa849254",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "3490cfe9-fd36-43af-8083-155ea8ed827a",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "name": "Piano_Interaction"
+                },
+                {
+                    "spriteSheetId": "6023c87d-078f-43ce-bce1-4bf50975a57a",
+                    "spriteType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "aad793b4-c2db-4ea7-b448-5636669a5324",
+                    "x": 9,
+                    "y": 6,
+                    "name": "Furniture1_interact",
+                    "script": [
+                        {
+                            "id": "5f3efc55-98dd-475e-98df-cf2c001b18a5",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "Gwenn :\nC'est sa\ncommode",
+                                    "....",
+                                    "il a encore\ndes trou partout\ndans ses",
+                                    "chausettes et\nses calecons..."
+                                ],
+                                "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                            }
+                        },
+                        {
+                            "id": "1f99c569-6be7-423a-b611-e0b48b55f66c",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "triggers": [
+                {
+                    "trigger": "walk",
+                    "id": "9d320b90-8616-4112-a054-0da915ce926d",
+                    "x": 6,
+                    "y": 11,
+                    "width": 8,
+                    "height": 1,
+                    "script": [
+                        {
+                            "id": "cc045a58-3b42-4d31-92ab-226b22eaaf5b",
+                            "command": "EVENT_IF_FALSE",
+                            "args": {
+                                "variable": "L0",
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "id": "7ec3a818-6581-4a04-80bb-c0215fbaa03f",
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": 0
+                                        }
+                                    },
+                                    {
+                                        "id": "612c489d-484b-4f70-89bf-c74b7ce8b127",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "ATCHOUM !",
+                                                "Gwenn :\nJe retire ce que\nj'ai dit",
+                                                "y'a de la\npoussière\npartout.."
+                                            ],
+                                            "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                                        }
+                                    },
+                                    {
+                                        "id": "3813833d-47af-46c0-8b9e-6f0436e76837",
+                                        "command": "EVENT_SET_TRUE",
+                                        "args": {
+                                            "variable": "L0"
+                                        }
+                                    },
+                                    {
+                                        "id": "c2ef3597-79ff-4afe-aab7-d8461b6f1912",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "28bdfc9e-5d0e-43f1-990c-330887ea03ba",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "58c4974c-9e62-471f-a25b-32b19533afba",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                }
+            ],
+            "script": [
+                {
+                    "id": "b61cb8b3-8984-4a64-9c67-66acb40a2ea2",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Gwenn :\nTiens sa chambre\nest rangée",
+                            "pour une fois."
+                        ],
+                        "avatarId": "af0e0c2c-ae6b-4253-b70b-975ae8967e4f"
+                    }
+                },
+                {
+                    "id": "755022ba-92d8-424e-843c-b84fa64807b8",
+                    "command": "EVENT_END"
+                }
+            ]
+        },
+        {
+            "name": "Scene 3 - Fin",
+            "backgroundId": "8e8a897c-9c41-494d-a1b0-9ecff4a113f9",
+            "width": 20,
+            "height": 18,
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "tileColors": [],
+            "id": "f5d56f40-f8bb-407f-af2f-c293ddc88270",
+            "x": 607.8476097470239,
+            "y": 374.7047642299109,
             "actors": [],
-            "triggers": []
+            "triggers": [],
+            "type": "0",
+            "script": [
+                {
+                    "id": "5f031dec-2c51-49ab-84f0-56c5781b8c66",
+                    "command": "EVENT_HIDE_SPRITES",
+                    "args": {}
+                },
+                {
+                    "id": "1a737b90-f19a-4e23-9185-a2ea40f84617",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Coucou Gwennou\nJoyeux\nanniverssaire !",
+                            "J'espère\nque tu \naimes ton",
+                            "cadeau.\nCes 5 ans\navec toi",
+                            "son pour\nl'instant les\nplus belles",
+                            "années de\nma vie\net je tiens",
+                            "à te remercier.\nJe t'aime\net je te souhaite",
+                            "que le meilleur\npour cette\nannée.",
+                            "On se revoit\nbientôt.\nCorentin.",
+                            "...",
+                            "...",
+                            "...",
+                            "(Le jeu est\nfini, faut fermer\nla fenêtre)"
+                        ],
+                        "avatarId": ""
+                    }
+                },
+                {
+                    "id": "e7c7d2b1-2069-4ee6-bb92-3d98175c2e90",
+                    "command": "EVENT_END"
+                }
+            ]
         }
     ],
     "_version": "2.0.0",
@@ -1431,6 +3261,50 @@
         {
             "id": "90d28fb6-ce62-4e3b-9ee8-2c97f1ff70af__L0",
             "name": "Inspected"
+        },
+        {
+            "id": "23f508d5-20d0-4387-96d4-fbf08b54c8b4__L0",
+            "name": "Inspected"
+        },
+        {
+            "id": "050873b6-7a63-4cb3-882c-78827e9de3f3__L0",
+            "name": "Play"
+        },
+        {
+            "id": "0",
+            "name": "Music_loop"
+        },
+        {
+            "id": "1",
+            "name": "Bot_State01"
+        },
+        {
+            "id": "2",
+            "name": "Bot_State02"
+        },
+        {
+            "id": "3",
+            "name": "Bot_State03"
+        },
+        {
+            "id": "4",
+            "name": "Bot_State04"
+        },
+        {
+            "id": "5",
+            "name": "Bot_State_05"
+        },
+        {
+            "id": "6",
+            "name": "Bot_State_06"
+        },
+        {
+            "id": "9d320b90-8616-4112-a054-0da915ce926d__L0",
+            "name": "triggered"
+        },
+        {
+            "id": "4ac42f73-2ee1-4598-aa1e-6c887ff10c67__L0",
+            "name": "inspected"
         }
     ],
     "backgrounds": [
@@ -1442,7 +3316,7 @@
             "imageWidth": 192,
             "imageHeight": 144,
             "filename": "Scene1_Hallway.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
         },
         {
             "id": "41dda7ce-b2aa-4a7c-a3a6-d02756432e51",
@@ -1452,7 +3326,17 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Scene2_Room.png",
-            "_v": 1599822535191
+            "_v": 1599911656295
+        },
+        {
+            "id": "8e8a897c-9c41-494d-a1b0-9ecff4a113f9",
+            "name": "Scene3_End",
+            "width": 20,
+            "height": 18,
+            "imageWidth": 160,
+            "imageHeight": 144,
+            "filename": "Scene3_End.png",
+            "_v": 1599927774700
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -1462,7 +3346,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "placeholder.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
         }
     ],
     "spriteSheets": [
@@ -1472,7 +3356,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Icon_Girl.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
         },
         {
             "id": "e95af522-fa37-4009-91ea-14421214ed71",
@@ -1480,7 +3364,15 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Icon_Mista.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
+        },
+        {
+            "id": "e6f9d87c-deac-4ee1-bc98-401244b62b1e",
+            "name": "Icon_Robot",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "Icon_Robot.png",
+            "_v": 1599916233290
         },
         {
             "id": "77f65678-64ae-488c-b8e1-a50867d3e46b",
@@ -1488,7 +3380,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Sprite_Bed.png",
-            "_v": 1599818289982
+            "_v": 1599911656295
         },
         {
             "id": "6023c87d-078f-43ce-bce1-4bf50975a57a",
@@ -1496,7 +3388,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "Sprite_Null.png",
-            "_v": 1599818416329
+            "_v": 1599911656295
         },
         {
             "id": "11b5452b-187c-43a3-afb1-a1f4f74ffda2",
@@ -1504,7 +3396,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "actor.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -1512,7 +3404,15 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "actor_animated.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
+        },
+        {
+            "id": "3eef18d2-714d-41e9-be62-6687b2656b44",
+            "name": "robot_anim",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "robot_anim.png",
+            "_v": 1599912240708
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -1520,18 +3420,30 @@
             "numFrames": 1,
             "type": "static",
             "filename": "static.png",
-            "_v": 1599814906176
+            "_v": 1599911656295
         }
     ],
     "music": [
         {
+            "id": "4a8b90fb-5e7f-4d8e-b516-9ba6cede878a",
+            "name": "Short Lullaby with Key Modulation",
+            "filename": "Short Lullaby with Key Modulation.mod",
+            "_v": 1599914443057
+        },
+        {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1599814906158
+            "_v": 1599911656273
         }
     ],
-    "customEvents": [],
+    "customEvents": [
+        {
+            "id": "cfc23dca-8327-406b-a391-8449d3fde748",
+            "variables": {},
+            "actors": {}
+        }
+    ],
     "palettes": [
         {
             "id": "default-bg-1",
